@@ -17,3 +17,11 @@ or pass the data from the pipe
 ```code
 echo hello | cpsh
 ```
+
+### Build
+
+```
+make build
+# you can also build for a specific platform [windows, mac, linux]
+make build-[platform]
+```
