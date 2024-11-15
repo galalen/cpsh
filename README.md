@@ -1,27 +1,21 @@
 # cpsh
 
-#### Copy without leaving your terminal 💻
+Copy without leaving your terminal 💻
 
-_Usage_
+## Features
+- Copy text directly: `cpsh "hello world"`
+- Copy file contents: `cpsh -f file.txt`
+- Copy file paths for non-text files: `cpsh -f document.pdf`
+- Copy from pipe: `echo hello | cpsh`
 
-```code
-
-  -c string
-        direct content to copy
-  -p string
-        file path to copy its content
+## Installation
+```bash
+go install github.com/galalen/cpsh@latest
 ```
 
-or pass the data from the pipe
-
-```code
-echo hello | cpsh
-```
-
-### Build
-
-```
-make build
-# you can also build for a specific platform [windows, mac, linux]
-make build-[platform]
+## Building from source
+```bash
+git clone https://github.com/galalen/cpsh
+cd cpsh
+go build
 ```

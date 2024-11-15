@@ -1,6 +1,6 @@
 module github.com/galalen/cpsh
 
-go 1.19
+go 1.23.1
 
 require (
 	golang.design/x/clipboard v0.6.3 // indirect
